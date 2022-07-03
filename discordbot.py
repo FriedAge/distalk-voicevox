@@ -61,7 +61,7 @@ async def 切断(ctx):
             await ctx.voice_client.disconnect()
 
 @client.command()
-async def 辞書登録(ctx, *args):
+async def 辞書追加(ctx, *args):
     if len(args) < 2:
         await ctx.send(f'「{prefix}辞書登録 単語 よみがな」で入力してください。')
     else:
