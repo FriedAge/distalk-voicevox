@@ -193,6 +193,7 @@ async def on_message(message):
                 message.guild.voice_client.play(source)
     await client.process_commands(message)
 
+'''
 @client.event
 async def on_voice_state_update(member, before, after):
     if before.channel is None:
@@ -236,6 +237,7 @@ async def on_voice_state_update(member, before, after):
                     await member.guild.voice_client.disconnect()
                     await asyncio.sleep(0.5)
                     await after.channel.connect()
+'''
 
 @client.event
 async def on_command_error(ctx, error):
